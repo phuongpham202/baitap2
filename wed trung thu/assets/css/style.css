@@ -1,0 +1,211 @@
+#main{
+    overflow: hidden;
+}
+#header{
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+}
+.nav-item:hover .dropdown-menu{
+    display: block;
+}
+.dropdown-menu li:hover a{
+    color: wheat;
+    background-color: inherit;
+    transform: translateX(5px);
+}
+.nav-item:hover{
+    transform: translatey(5px);
+}
+.nav-item{
+    transition: transform 0.2s ease;
+}
+.bg-light {
+    --bs-bg-opacity: 1;
+    background-color: initial;
+}
+
+#slider{
+    position: relative;
+    background: url(../img/backiee-48541.jpg) center top / cover no-repeat;
+    padding-top: 50%;
+}
+#slider::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 350px;
+    background: linear-gradient(to top,#f1f4f9,transparent);
+    z-index: 100;
+}
+.logo-moon{
+    display:grid;
+    position: absolute;
+    top: 0;
+    right: 250px;
+    animation: slowIn 25s infinite ease ;
+    text-align: center;
+}
+.logo-moon2{
+    display:grid;
+    position: absolute;
+    z-index: 5;
+    top: 20%;
+    left: 18%;
+    animation: slowInY 3s ease ;
+    text-align: center;
+}
+.logo-moon3 {
+    display:flex;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 1;
+    bottom: -300px;
+}
+
+.moon{
+    width: 300px;
+}
+.moon2{
+    width: 300px;
+}
+.moon3{
+    width: 15%;
+    animation: slowInY2 25s infinite ease ;
+}
+.logo-moon3 img:nth-child(1){
+    animation-delay:0s;
+}
+.logo-moon3 img:nth-child(2){
+    animation-delay:20s;
+}
+.logo-moon3 img:nth-child(3){
+    animation-delay:15s;
+}
+.logo-moon3 img:nth-child(4){
+    animation-delay:8s;
+}
+.logo-moon3 img:nth-child(5){
+    animation-delay:4s;
+}
+.logo-moon3 img:nth-child(6){
+    animation-delay:25s;
+}
+.logo-moon3 img:nth-child(7){
+    animation-delay:18s;
+}
+.text--logo-mon{
+    font-size: 50px;
+    font-family:cursive;
+}
+#content{
+    background: url(https://topshare.vn/wp-content/uploads/2021/02/Hinh-nen-xanh-duong-danh-cho-dien-thoai-dep-7.jpg) center top / cover no-repeat;
+    z-index: 1;
+    
+}
+.content__img-text {
+    color:#865700
+}
+.content-text{
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    color: #003dff;;
+    padding-top: 100px;
+}
+.ph-clock-counter-clockwise{
+    font-size: 50px;
+}
+.content__traditional-text{
+    color: #003cff;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.ph-globe-hemisphere-east{
+    font-size: 40px;
+    margin: 0;
+}
+.traditional--text--img{
+    text-align: center;
+}
+.strong-text{
+    margin-top: 10px;
+    padding: 5px 15px;
+    color: #354a8d;
+    background-color: yellowgreen;
+    border-radius: 50px;
+}
+.traditional-img-size{
+    margin-top: 25px;
+    width: 300px;
+    height: 230px;
+}
+.traditional--text{
+    text-align: left;
+    color: #865700
+}
+.content__img__girl{
+    text-align: center;
+}
+.content__img__girl-text{
+    animation: infinite;
+    font-weight: 700;
+}
+.content__img__girl--size{
+    width: 30%;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 15px 5px rgba(0, 185, 233, .75); box-shadow: 0px 0px 15px 5px rgba(0, 185, 233, .75); -webkit-transition: all 0.7s ease; transition: all 0.7s ease;
+    margin: 5px;
+}
+.content__img__girl--size:hover{
+    transform: scale(1.3);
+    
+}
+.character-name2{
+    margin:0 10px ;
+}
+@keyframes slowIn {
+    0%{
+        opacity: 0;
+        transform: translateX(-1200px);
+    }
+    50%{
+        opacity: 1;
+        /* transform: translateX(-250px); */
+    }
+    100%{
+        opacity: 0;
+        transform: translateX(300px);
+    }
+
+}
+@keyframes slowInY {
+    from{
+        opacity: 0;
+        transform: translatey(-500px);
+    }
+    to{
+        opacity: 1;
+        transform: translatey(0px);
+    }
+
+}
+@keyframes slowInY2 {
+    0%{
+        opacity: 0;
+    }
+    40%{
+        opacity: 0.4;
+
+    }
+    80%{
+        opacity: 0.8;
+
+    }
+    100%{
+        opacity: 1;
+        
+    }
+}
